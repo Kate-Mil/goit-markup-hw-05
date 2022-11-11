@@ -579,3 +579,55 @@ color: var(--activeSelection);
 .projects-card:hover .overlay {
   opacity: 1;
 }
+
+/*--------------MODAL------------*/
+
+.backdrop {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color:rgba(0, 0, 0, 0.2);
+
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 528px;
+height: 581px;
+background-color: var(--addColor);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+display: flex;
+justify-content: flex-end;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  align-content: flex-end;
+  width: 30px;
+  height: 30px;
+  background-color: var(--addColor);  
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: #000000;
+  padding: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.close-btn-icon {
+  fill:currentColor;
+}
